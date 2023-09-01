@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="#"><!-- no favicon error -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>TTT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div id="header">FUN GAME</div>
+
+<div id="main">
+
+  <div id="scores" class="pad">
+    <div>Moves: <span id="moveCount"></span></div> 
+    <div><span id="player1"></span>wins: <span id="p1WinCount"></span></div> 
+    <div><span id="player2"></span>wins: <span id="p2WinCount"></span></div>
+  </div>
+
+  <div id="game-container">
+    <!-- first row (whitespace between divs on same row messes up layout)-->
+    <div class="cell" data-index="0"></div><div class="cell" data-index="1"></div><div class="cell" data-index="2"></div>
+
+    <!-- second row -->
+    <div class="cell" data-index="3"></div><div class="cell" data-index="4"></div><div class="cell" data-index="5"></div>
+
+    <!-- third row -->
+    <div class="cell" data-index="6"></div><div class="cell" data-index="7"></div><div class="cell" data-index="8"></div>
+  </div> 
+
+  <div class="pad" id="winMessage"></div>
+</div><!-- main -->
+
+<div id="control-buttons-container">
+  <button id="reset-score-button">Reset Score</button>
+  <button id="next-game-button">Next Game</button>
+  <button id="new-players-button">New Players</button>
+</div>
+
+<div id="bottom-container">
+  <div id="turn-message"></div>
+  <div id="draw-message"></div>
+  <div class="player-container">Player 1 name: 
+    <input type="text" id="p1-name" placeholder="enter name">
+    <select name="token" id="token-menu">
+      <option value="" selected disabled>Player 1 Token...</option>
+      <option value="X">X</option>
+      <option value="O">O</option>
+    </select>
+  </div>
+  <div class="player-container">Player 2 name: 
+    <input type="text" id="p2-name" placeholder="enter name">
+    <button id="start-button">Start Game</button>
+  </div>
+</div>
+
+</body>
+</html>
