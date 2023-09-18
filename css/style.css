@@ -43,7 +43,7 @@ body {
   width: 33%;
   height: 33%;
   border: 1px solid green;
-  font-size: 14vmax; /* higher of vw or vh */
+  font-size: 11vmax; /* higher of vw or vh */
   line-height: 110%;
   vertical-align: bottom;
 }
@@ -74,7 +74,7 @@ body {
 
 #turn-message,
 #draw-message {
-  font-size: 7vh;
+  font-size: 6vh;
   text-align: center;
   display: none;
 }
@@ -101,7 +101,7 @@ body {
 
 #start-button {
   width: 10%;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   background-color:lightgreen;
   cursor: pointer;
 }
